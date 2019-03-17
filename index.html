@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-color="#BDBDBD" data-transition="fade-in slide-out">
+				<h2>Servidor Web</h2>
+				<p style="color:white">Presentacion realizada por: Mikel - Cristina - Esteban</p>
+				</section>
+				
+				<section data-background-color="#E6E6E6" data-transition="slide-in fade-out">
+					<p>Indice</p>
+					<ul>
+					<li type="circle">Definición</li>
+					<li type="circle">Instalacion de un servidor apache(XAMPP)</li>
+					<li type="circle">Personalizacion de la pagina de inicio</li>
+					<li type="circle">Abrir puerto del router</li>
+					<li type="circle">Darse de alta en un servidor DNS</li>
+					<li type="circle">Acceso desde el exterior</li>
+					<li type="circle">Preguntass</li>
+					<li type="circle">Referncias</li>
+					</ul>
+				
+				</section>
+				<section data-transition="slide-in fade-out">
+				<h1>Definiciones de Servidor Web</h1>
+				<p>Es un servidor que almacena los documentos que componen una página web (HTML, CSS, PHP…) y se la proporciona al usuario para que la visualice completa en su navegador de Internet.</p>
+				</section>
+
+				<div class="reveal">
+				<div class="slides">
+					<section data-background-color="#BDBDBD" data-transition="slide-in fade-out">
+						<section>
+								<h3>Instalacion de Apache</h3>
+								<img src="images/1.jpg" alt="1" align="center">
+						</section>
+						<section>
+							<h3>Descargar:</h3>
+							<img src="images/2.png"  height="450" >
+						</section>
+						<section>
+							<h3>Instalacion:</h3>
+							<img src="images/3.png"  height="450" >
+						</section>						
+						<section>
+							<h4>Determinar la ruta:</h4>
+							<img src="images/4.png"  height="450" >
+						</section>							
+						<section>
+							<h4>Siguinte hasta que comience la instalacion:</h4>
+							<img src="images/5.png"  height="450" >
+						</section>	
+						<section>
+							<h4>Cunado haya terminado solo hay que darle a start y ya iniciara nuestro servidor apache:</h4>
+							<img src="images/6.png"  height="450" >
+						</section>							
+												
+						
+					</section>
+					<section>
+						<section>
+							<h3>Personalizar pagina de inicio:</h3>
+							<p>Para ello debe ir a:</p>
+							<img src="images/7.png"  height="450" >
+						</section>
+						<section>
+							<h3>Creamos un archivo index.html para poner de ejemplo:</h3>
+							<img src="images/8.png"  height="450" >
+						</section>
+						
+						<section>
+							<h3>Entramos a nuestra ip para ver como queda:</h3>
+							<img src="images/9.png"  height="450" >
+						</section>					
+						
+					</section>
+					
+					<section>
+							<h5>Acceder a nuestro router para abrir el puerto 80 y mandar la conexiones a nuestro equipo:</h5>
+							<img src="images/10.png"  height="450" >	
+					</section>					
+					
+					<section data-background-color="#E6E6E6" data-transition="slide-in fade-out">
+						<section>
+							<h3>Nos daremos de alta en algun servicio DNS para acceder desde un dominio:</h3>
+							<img src="images/11.png"  height="450" >
+						</section>
+						<section>
+							<h3>Una vez rgistrado iremos al apartado de Dynamic DNS y dentro de Hostnames:</h3>
+							<img src="images/12.png"  height="450" >
+						</section>
+						
+						<section>
+							<h3>Descargamos es software de no-ip e iniciamos:</h3>
+							<img src="images/13.png"  height="450" >
+						</section>					
+
+					</section>					
+				
+					<section data-background-color="#E6E6E6" data-transition="slide-in fade-out">
+							<h3>Accedemos a nuestra url:</h3>
+							<img src="images/14.png"  height="450" >					
+					</ul>
+				
+				</section>
+
+				</div>
+				</div>
+				<section data-background-color="#E6E6E6" data-transition="slide-in fade-out"> 
+				<h1> Preguntas ?</h1> 
+
+				</section>
+				<section>
+				<a href="https://github.com/hakimel/reveal.js/">Ir a github para la plantilla y mas informacion</a>
+				<a href="https://my.noip.com">Ir a no-ip</a>
+				<a href="https://www.apachefriends.org/es/index.html">Ir a xampp</a>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
